@@ -14,6 +14,15 @@ export const Container = styled.div`
       align-self: center;
     }
   }
+
+  @media screen and (max-width: 400px) {
+    .check {
+      .video {
+        width: 300px;
+        height: 200px;
+      }
+    }
+  }
 `;
 export const Title = styled.h1`
   font-size: 30px;
@@ -55,6 +64,11 @@ export const Header = styled.header`
       }
     }
   }
+  @media screen and (max-width: 400px) {
+    .group {
+      display: none;
+    }
+  }
 `;
 export const Main = styled.div`
   background-image: url(${bgImg});
@@ -92,6 +106,17 @@ export const Main = styled.div`
       }
       to {
         transform: translate(0, -70%);
+      }
+    }
+  }
+  @media screen and (max-width: 400px) {
+    .container {
+      padding: 10px;
+      .frase {
+        font-size: 30px;
+      }
+      .autor {
+        font-size: 20px;
       }
     }
   }
@@ -152,6 +177,28 @@ export const Content = styled.div`
       }
     }
   }
+  @media screen and (max-width: 400px) {
+    padding: 10px;
+    img {
+      display: none;
+    }
+    .section {
+      display: flex;
+      flex-direction: column;
+      .network-group {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 0px;
+      }
+      .skills {
+        margin: 30px 0;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 0px;
+        max-height: 300px;
+      }
+    }
+  }
 `;
 
 export const CardContainer = styled.div`
@@ -163,6 +210,12 @@ export const CardContainer = styled.div`
   margin: 30px 0;
   #subir {
     margin-bottom: 40px;
+  }
+  @media screen and (max-width: 400px) {
+    flex-direction: column;
+    #subir {
+      margin: 30px 0;
+    }
   }
 `;
 export const Card = styled.div`
@@ -214,6 +267,15 @@ export const CardContainer2 = styled.div`
     &:hover {
       transform: scale(1.1);
     }
+  }
+  @media screen and (max-width: 400px) {
+    grid-template-areas:
+      'd1'
+      'd2'
+      'd3'
+      'd4'
+      'd5';
+    gap: 30px;
   }
 `;
 
