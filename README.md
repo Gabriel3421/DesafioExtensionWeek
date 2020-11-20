@@ -2,6 +2,8 @@
 
 Landing Page para a soft skill que eu acho mais importante.
 
+![Capa](./src/assets/capa.png)
+
 ## Getting Started
 
 ### Pré-requisitos
